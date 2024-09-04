@@ -10,5 +10,5 @@ For team Wan23's group, we will be making a flappy bird game, reimagined. Instea
 [On how to open the game](https://github.com/diamondex187/pythonhackathon2024/wiki)
 
 ## SPECIAL THANKS TO:
-- all members on Wan23
+- all members of Wan23
 - mentor Ju Ping
