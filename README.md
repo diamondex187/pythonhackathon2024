@@ -8,7 +8,7 @@ For team Wan23's group, we will be making a flappy bird game, reimagined. Instea
 - press Space to jump/play
 - press Alt-F4 to quit game
 
-[On how to open the game](https://github.com/diamondex187/pythonhackathon2024/wiki/HOW-TO-DOWNLOAD-AND-OPEN-THE-GAME:)
+[On how to download the game](https://github.com/diamondex187/pythonhackathon2024/wiki/HOW-TO-DOWNLOAD-AND-OPEN-THE-GAME:)
 
 ## SPECIAL THANKS TO:
 - all members of Wan23
