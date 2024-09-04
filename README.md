@@ -13,3 +13,8 @@ For team Wan23's group, we will be making a flappy bird game, reimagined. Instea
 ## SPECIAL THANKS TO:
 - all members of Wan23
 - mentor Ju Ping
+
+## THE TEAM:
+- The Thinker: Loh Yi Qi
+- The Evaluator: Loh Je Le
+- The Coder: Lee Yu Cheng
