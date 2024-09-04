@@ -98,9 +98,9 @@ floor_surface = pygame.image.load('assets/base.png').convert()
 floor_surface = pygame.transform.scale2x(floor_surface)
 floor_x_pos = 0
 
-bird_downflap = pygame.transform.scale2x(pygame.image.load('assets/yellowbird-downflap.png').convert_alpha())
-bird_midflap = pygame.transform.scale2x(pygame.image.load('assets/bluebird-midflap.png').convert_alpha())
-bird_upflap = pygame.transform.scale2x(pygame.image.load('assets/bluebird-upflap.png').convert_alpha())
+bird_downflap = pygame.transform.scale2x(pygame.image.load('assets/plane-downflap.png').convert_alpha())
+bird_midflap = pygame.transform.scale2x(pygame.image.load('assets/plane-midflap.png').convert_alpha())
+bird_upflap = pygame.transform.scale2x(pygame.image.load('assets/plane-upflap.png').convert_alpha())
 bird_frames = [bird_downflap,bird_midflap,bird_upflap]
 bird_index = 0
 bird_surface = bird_frames[bird_index]
@@ -109,11 +109,7 @@ bird_rect = bird_surface.get_rect(center = (100,512))
 BIRDFLAP = pygame.USEREVENT + 1
 pygame.time.set_timer(BIRDFLAP,200)
 
-# bird_surface = pygame.image.load('assets/bluebird-midflap.png').convert_alpha()
-# bird_surface = pygame.transform.scale2x(bird_surface)
-# bird_rect = bird_surface.get_rect(center = (100,512))
-
-pipe_surface = pygame.image.load('assets/pipe-green.png')
+pipe_surface = pygame.image.load('assets/clouds.png')
 pipe_surface = pygame.transform.scale2x(pipe_surface)
 pipe_list = []
 SPAWNPIPE = pygame.USEREVENT
@@ -124,8 +120,10 @@ game_over_surface = pygame.transform.scale2x(pygame.image.load('assets/message.p
 game_over_rect = game_over_surface.get_rect(center = (288,512))
 
 flap_sound = pygame.mixer.Sound('sound/sfx_wing.wav')
-death_sound = pygame.mixer.Sound('sound/sfx_hit.wav')
+death_sound = pygame.mixer.Sound('sound/sfx_bom.wav')
 score_sound = pygame.mixer.Sound('sound/sfx_point.wav')
+bg_music = pygame.mixer.music.load('sound/music.mp3') 
+pygame.mixer.music.play(-1,0.0) 
 score_sound_countdown = 100
 SCOREEVENT = pygame.USEREVENT + 2
 pygame.time.set_timer(SCOREEVENT,100)
@@ -182,11 +180,10 @@ while True:
 
 
 	# Floor
-	floor_x_pos -= 1
+	floor_x_pos -= 2
 	draw_floor()
 	if floor_x_pos <= -576:
 		floor_x_pos = 0
-	
 
 	pygame.display.update()
 	clock.tick(100)
