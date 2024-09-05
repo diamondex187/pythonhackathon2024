@@ -12,6 +12,7 @@ For team Wan23's group, we will be making a flappy bird game, reimagined. Instea
 - all members of Wan23
 - mentor Ju Ping
 - PSC
+- ChatGPT
 
 ## THE TEAM:
 - The Thinker: Loh Yi Qi
